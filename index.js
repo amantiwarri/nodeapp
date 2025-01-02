@@ -20,6 +20,12 @@ app.get("/products", (req, res) => {
   });
 });
 
+app.get("/about", (req, res) => {
+  res.status(200).json({
+    message: "Welcome to the About us route",
+  });
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
